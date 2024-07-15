@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B63229C72C453D38007B884B /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63229C62C453D38007B884B /* MemoryGame.swift */; };
+		B63229C92C453E79007B884B /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63229C82C453E79007B884B /* EmojiMemoryGame.swift */; };
 		B6C4B4602C3EA00D0075AE84 /* Memorize_swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C4B45F2C3EA00D0075AE84 /* Memorize_swiftUIApp.swift */; };
-		B6C4B4622C3EA00D0075AE84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C4B4612C3EA00D0075AE84 /* ContentView.swift */; };
+		B6C4B4622C3EA00D0075AE84 /* EmojiMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C4B4612C3EA00D0075AE84 /* EmojiMemoryGameView.swift */; };
 		B6C4B4642C3EA00E0075AE84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C4B4632C3EA00E0075AE84 /* Assets.xcassets */; };
 		B6C4B4672C3EA00E0075AE84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C4B4662C3EA00E0075AE84 /* Preview Assets.xcassets */; };
 		B6C4B4712C3EA00E0075AE84 /* Memorize_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C4B4702C3EA00E0075AE84 /* Memorize_swiftUITests.swift */; };
@@ -34,9 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B63229C62C453D38007B884B /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		B63229C82C453E79007B884B /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		B6C4B45C2C3EA00D0075AE84 /* Memorize_swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize_swiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C4B45F2C3EA00D0075AE84 /* Memorize_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memorize_swiftUIApp.swift; sourceTree = "<group>"; };
-		B6C4B4612C3EA00D0075AE84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B6C4B4612C3EA00D0075AE84 /* EmojiMemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameView.swift; sourceTree = "<group>"; };
 		B6C4B4632C3EA00E0075AE84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6C4B4662C3EA00E0075AE84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B6C4B46C2C3EA00E0075AE84 /* Memorize_swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Memorize_swiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,8 +98,10 @@
 		B6C4B45E2C3EA00D0075AE84 /* Memorize_swiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B63229C82C453E79007B884B /* EmojiMemoryGame.swift */,
+				B63229C62C453D38007B884B /* MemoryGame.swift */,
+				B6C4B4612C3EA00D0075AE84 /* EmojiMemoryGameView.swift */,
 				B6C4B45F2C3EA00D0075AE84 /* Memorize_swiftUIApp.swift */,
-				B6C4B4612C3EA00D0075AE84 /* ContentView.swift */,
 				B6C4B4632C3EA00E0075AE84 /* Assets.xcassets */,
 				B6C4B4652C3EA00E0075AE84 /* Preview Content */,
 			);
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6C4B4622C3EA00D0075AE84 /* ContentView.swift in Sources */,
+				B6C4B4622C3EA00D0075AE84 /* EmojiMemoryGameView.swift in Sources */,
 				B6C4B4602C3EA00D0075AE84 /* Memorize_swiftUIApp.swift in Sources */,
+				B63229C72C453D38007B884B /* MemoryGame.swift in Sources */,
+				B63229C92C453E79007B884B /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
