@@ -9,21 +9,38 @@ import XCTest
 @testable import Memorize_swiftUI
 
 final class Memorize_swiftUITests: XCTestCase {
+    let emojis = ["👻","🎃","🕷️","😈","💀","🕸️","🧙","🙀","👹","😱","☠️","🍭"]
+    
+    private func createMemoryGame() -> MemoryGame<String> {
+        return MemoryGame(numberOfPairsOfCards: 2) {
+            if emojis.indices.contains($0) {
+                return emojis[$0]
+            } else {
+                return "⁉️"
+            }
+        }
+    }
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        try super.setUpWithError()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        try super.tearDownWithError()
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testExample() throws {         
+        var model = createMemoryGame()
+        XCTAssertFalse(model.cards[0].isFaceUp)
+        XCTAssertFalse(model.cards[0].isMatched)
+        model.choose(model.cards[0])
+        XCTAssertTrue(model.cards[0].isFaceUp)
+        XCTAssertFalse(model.cards[0].isMatched)
+        model.choose(model.cards[1])
+        XCTAssertTrue(model.cards[0].isFaceUp)
+        XCTAssertTrue(model.cards[1].isFaceUp)
+        XCTAssertTrue(model.cards[0].isMatched)
+        XCTAssertTrue(model.cards[1].isMatched)
     }
 
     func testPerformanceExample() throws {
